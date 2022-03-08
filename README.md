@@ -99,23 +99,39 @@ b) Open a command prompt window and navigate to your ‘reviewScrapper’ folder
 requirements.txt helps the Heroku cloud app to install all the dependencies before starting the webserver.
 
 c) Deployment to Heroku:
+    
     • Go to Heroku.com and create an account and login.
+    
     • Click on new(inside the red box) to create a new app.
+    
     • Give the name of the app and click ‘create app’.
+    
     • After app creation, the ‘deploy’ section has all the deployment steps mentioned.
+    
     • We’ll download and install the Heroku CLI from the Heroku website: https://devcenter.heroku.com/articles/heroku-cli.
+    
     • Git also needs to be installed in your computer.
+    
     • After installing the Heroku CLI, Open a command prompt window and navigate to your project folder.
+    
     • Type the command ‘heroku login’ to login to your heroku account as shown  below:
 
 It opens up a webpage to login to Heroku.
+ 
     • Before deploying the code to the Heroku cloud, we need to commit the changes to the local git repository.
+    
     • Type the command ‘git init to initialize a local git repository  as shown below:
+    
     • Enter the command heroku git:remote <remote repo name> to connect local git repo to the remote repo.
+    
     • Enter the command ‘git status’ to see the uncommitted changes
+    
     • Enter the command ‘git add .’ to add the uncommitted changes to the local repository.
+    
     • Enter the command ‘git commit -am "make it better"’ to commit the changes to the local repository.
+    
     • Enter the command ‘git push heroku master’ to push the code to the heroku cloud.
+    
     • After deployment, heroku gives you the URL to hit the web API.
 
 Once your application is deployed successfully, enter the command ‘heroku logs --tail’ to see the logs.
